@@ -1,0 +1,18 @@
+header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  font-size: x-large;
+  padding: 0 20px;
+}
+
+header > a {
+  color: white;
+  margin-left: 25px;
+}
+
+header > .active {
+  text-decoration: underline;
+  text-decoration-color: #61dafb;
+}

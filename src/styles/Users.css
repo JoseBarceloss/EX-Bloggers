@@ -1,0 +1,35 @@
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.users-list > div {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.users-list > div > img {
+  height: 250px;
+}
+
+.users-list > div > p {
+  font-size: larger;
+  font-weight: 600;
+  margin: 0;
+}
+
+.users-list > div > a {
+  border: 1px solid #4341bb;
+  color: #4341bb;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}

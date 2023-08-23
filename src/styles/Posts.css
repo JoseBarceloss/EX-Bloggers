@@ -1,0 +1,16 @@
+.posts-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.posts-list > div {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
+  padding: 20px;
+}
