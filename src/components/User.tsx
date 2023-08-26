@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { UserType } from '../types';
 
 type Props = {
@@ -13,6 +14,7 @@ export default function User({ userData }: Props) {
         {userData.lastName}
       </p>
       <img src={ userData.image } alt={ `${userData.firstName} ${userData.lastName}` } />
+      <Link to={ `/posts/${userData.id}` }>Posts</Link>
     </div>
   );
 }
