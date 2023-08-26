@@ -1,0 +1,354 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2023-08-26T17:45:35.848Z",
+    "end": "2023-08-26T17:45:47.887Z",
+    "duration": 12039,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0556bad9-2b4c-467d-bcff-b52eb1b08a71",
+      "title": "",
+      "fullFile": "cypress/e2e/App.cy.js",
+      "file": "cypress/e2e/App.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "22b97bc6-d919-4c41-9611-1029606ad878",
+          "title": "1 - Crie as rotas para a aplicação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "timedOut": null,
+              "duration": 1610,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup();\ncy.get('[data-testid=\"users-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "c069d7c6-934f-4997-ba1f-823043e43b3a",
+              "parentUUID": "22b97bc6-d919-4c41-9611-1029606ad878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "timedOut": null,
+              "duration": 1087,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('about');\ncy.get('[data-testid=\"about-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "e0cc0427-3e32-4816-a5be-8b553e313dec",
+              "parentUUID": "22b97bc6-d919-4c41-9611-1029606ad878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "timedOut": null,
+              "duration": 878,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/id');\ncy.get('[data-testid=\"posts-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "8a236321-85de-4798-9430-d9b2a5e61a40",
+              "parentUUID": "22b97bc6-d919-4c41-9611-1029606ad878",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "timedOut": null,
+              "duration": 779,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('not-found');\ncy.get('[data-testid=\"not-found-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "74c979f4-846f-4c4c-a358-684bec40c20d",
+              "parentUUID": "22b97bc6-d919-4c41-9611-1029606ad878",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c069d7c6-934f-4997-ba1f-823043e43b3a",
+            "e0cc0427-3e32-4816-a5be-8b553e313dec",
+            "8a236321-85de-4798-9430-d9b2a5e61a40",
+            "74c979f4-846f-4c4c-a358-684bec40c20d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "83a496bd-20e5-45c0-941a-2734447fe5e5",
+          "title": "2- Crie dois NavLink dentro do componente Header",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "timedOut": null,
+              "duration": 888,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/home/i).should('have.attr', 'href', '/');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "a2c8a998-ea66-455e-a120-c510b8761ef8",
+              "parentUUID": "83a496bd-20e5-45c0-941a-2734447fe5e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "timedOut": null,
+              "duration": 818,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/about/i).should('have.attr', 'href', '/about');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "82a281f2-e7a5-4aa3-b016-b05db68ce52f",
+              "parentUUID": "83a496bd-20e5-45c0-941a-2734447fe5e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a2c8a998-ea66-455e-a120-c510b8761ef8",
+            "82a281f2-e7a5-4aa3-b016-b05db68ce52f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1706,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8a68c45f-a46c-4ed3-8f0e-3b09fe596644",
+          "title": "3 - Crie um link para a página de posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "fullTitle": "3 - Crie um link para a página de posts de um usuário O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "timedOut": null,
+              "duration": 853,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (let id = 1; id <= _data.users.length; id++) {\n  cy.get(`a[href=\"/posts/${id}\"]`).should('exist');\n}",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "65e0996b-9907-42e0-943a-c6f069ad7fe2",
+              "parentUUID": "8a68c45f-a46c-4ed3-8f0e-3b09fe596644",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65e0996b-9907-42e0-943a-c6f069ad7fe2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 853,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3de74d51-f747-404d-a062-ce07a8fe8a5c",
+          "title": "4 - Exiba os posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "timedOut": null,
+              "duration": 812,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/1');\nconst othersPosts = _data.posts.filter(post => post.userId !== 1);\nothersPosts.forEach(post => {\n  cy.get('h1').should('not.contain', post.title);\n});\nconst userPosts = _data.posts.filter(post => post.userId === 1);\nuserPosts.forEach(post => {\n  cy.contains(post.title);\n});",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "7e74253a-52f4-42ee-b7a4-31172451b384",
+              "parentUUID": "3de74d51-f747-404d-a062-ce07a8fe8a5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O componente <Posts /> deve renderizar os posts do usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar os posts do usuário",
+              "timedOut": null,
+              "duration": 692,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_data.users.forEach(user => {\n  setup(`posts/${user.id}`);\n  const userPosts = _data.posts.filter(post => post.userId === user.id);\n  userPosts.forEach(post => {\n    cy.contains(post.title);\n  });\n});",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at invariant (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:203:11)\n    at Route (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?t=1693071362023&v=9a965da4:3721:10)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=9a965da4:19192:20)",
+                "diff": null
+              },
+              "uuid": "0d6a0909-aaa5-4d0d-b5f3-7600ab4f857b",
+              "parentUUID": "3de74d51-f747-404d-a062-ce07a8fe8a5c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7e74253a-52f4-42ee-b7a4-31172451b384",
+            "0d6a0909-aaa5-4d0d-b5f3-7600ab4f857b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1504,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
