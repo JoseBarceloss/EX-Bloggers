@@ -6,7 +6,10 @@ import { PostType } from '../types';
 import '../styles/Posts.css';
 
 export default function Posts() {
+  // Extrai o parâmetro "id" da rota usando o hook useParams
   const { id } = useParams <{ id: string }>();
+
+  // Filtra os posts com base no ID do usuário extraído dos parâmetros de rota
   const userPosts: PostType[] = posts.filter((post) => post.userId === Number(id));
 
   return (
